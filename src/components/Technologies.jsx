@@ -3,6 +3,7 @@ import styles from './Technologies.module.css';
 
 const Technologies = () => {
   const techs = [
+    { name: 'HTML5', category: 'Frontend' },
     { name: 'React', category: 'Frontend' },
     { name: 'Next.js', category: 'Frontend' },
     { name: 'Node.js', category: 'Backend' },
