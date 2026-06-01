@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 30006;
 app.use(express.static(path.join(__dirname, 'dist')));
 
 // Catch-all route to serve the React app for any path (client-side routing)
-app.get('*', (req, res) => {
+app.get(/.*/, (req, res) => {
   res.sendFile(path.join(__dirname, 'dist', 'index.html'));
 });
 
